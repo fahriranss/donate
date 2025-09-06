@@ -67,7 +67,7 @@
       qrisContainer.appendChild(spinner);
       
       try {
-        const imageUrl = encodeURIComponent('https://uploader.zenzxz.dpdns.org/uploads/1757034720962.jpeg');
+        const imageUrl = encodeURIComponent('https://uploader.zenzxz.dpdns.org/uploads/1757133054691.png');
         const apikey = 'planaai';
         const amountRounded = Math.round(amount);
         const apiUrl = `https://www.sankavollerei.com/orderkuota/createqris?apikey=${apikey}&amount=${amountRounded}&url=${imageUrl}`;
