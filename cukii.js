@@ -67,10 +67,10 @@
       qrisContainer.appendChild(spinner);
       
       try {
-        const imageUrl = encodeURIComponent('https://uploader.zenzxz.dpdns.org/uploads/1757133054691.png');
+        const codeqr = `00020101021126670016COM.NOBUBANK.WWW01189360050300000879140214257051891269890303UMI51440014ID.CO.QRIS.WWW0215ID20254127564260303UMI5204541153033605802ID5922JUNIAR STORE OK24820366013JAKARTA TIMUR61051310062070703A016304948E`;
         const apikey = 'planaai';
         const amountRounded = Math.round(amount);
-        const apiUrl = `https://www.sankavollerei.com/orderkuota/createqris?apikey=${apikey}&amount=${amountRounded}&url=${imageUrl}`;
+        const apiUrl = `https://www.sankavollerei.com/orderkuota/createpayment?apikey=${apikey}&amount=${amountRounded}&codeqr=${codeqr}`;
         
         const response = await fetch(apiUrl);
         if (!response.ok) throw new Error('Gagal menghubungi server.');
